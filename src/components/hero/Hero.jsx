@@ -1,6 +1,7 @@
 import React from "react";
 import { FaImage, FaInfoCircle } from "react-icons/fa";
 import hero from "../../assets/hero1.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,8 +15,8 @@ const Hero = () => {
           images effortlessly.
         </p>
         <div className="flex flex-col gap-6 lg:gap-8 w-full md:w-auto">
-          <a
-            href="/information"
+          <Link
+            to="/information"
             className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg p-6 flex items-start space-x-4 transition duration-300"
           >
             <FaInfoCircle className="text-4xl" />
@@ -25,9 +26,9 @@ const Hero = () => {
                 Generate detailed information and insights with ease.
               </p>
             </div>
-          </a>
-          <a
-            href="/image-info"
+          </Link>
+          <Link
+            to="/image-info"
             className="bg-green-600 hover:bg-green-700 text-white rounded-lg shadow-lg p-6 flex items-start space-x-4 transition duration-300"
           >
             <FaImage className="text-4xl" />
@@ -37,7 +38,7 @@ const Hero = () => {
                 Analyze and check your images with advanced tools.
               </p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center items-center">
