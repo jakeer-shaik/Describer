@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.logo {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
